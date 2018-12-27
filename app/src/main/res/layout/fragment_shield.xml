@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="shield_view"
+            type="com.example.abbott.navigation_demo.raspberry_pi.viewmodel.Raspberrpi_viewmodel"/>
+
+        <variable
+            name="Event"
+            type="com.example.abbott.navigation_demo.shield.presenter.Shield_Event"/>
+
+
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".shield.Shield">
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            style="@style/ImageView_Rasp_Shield"
+            android:layout_weight="1"
+            android:background="@drawable/kit"
+            android:elevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UnusedAttribute" />
+
+        <ImageView
+            android:id="@+id/Sonar"
+            style="@style/Helper_ImageView"
+            android:onClick="@{(v)->Event.Sonar()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.719"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.087" />
+
+        <ImageView
+            android:id="@+id/dc_motor"
+            style="@style/Helper_ImageView"
+            android:onClick="@{(v)->Event.dc_motor()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.101"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.67" />
+
+        <ImageView
+            android:id="@+id/servo"
+            style="@style/Helper_ImageView"
+            android:onClick="@{(v)->Event.Servo_motor()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.708"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.708" />
+
+        <ImageView
+            android:id="@+id/raspi"
+            style="@style/Helper_ImageView"
+            android:onClick="@{(v)->Event.Raspi()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.413"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.197" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.CardView
+
+        style="@style/CardViewStyle"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Text"
+                android:textColor="@color/Text"
+                android:text="@{shield_view.title}"
+
+                />
+
+            <TextView style="@style/SimpleText"
+                android:text="@{shield_view.desc}"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+</layout>
+
+
+
+
+
+
+

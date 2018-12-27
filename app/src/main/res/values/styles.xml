@@ -1,0 +1,144 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/RippleColor</item>
+
+    </style>
+
+    <style name="CardViewStyle" parent="CardView">
+
+        <item name="android:layout_height">@dimen/_190sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="cardCornerRadius">@dimen/_5sdp</item>
+        <item name="cardElevation">@dimen/_3sdp</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+
+
+    </style>
+
+    /*
+    CardView Style Start
+    */
+
+
+    <style name="Text" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:elevation" tools:ignore="NewApi">@dimen/_10sdp</item>
+
+    </style>
+
+    <style name="Recycler_card_view" parent="CardView.Light">
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+        <item name="android:layout_height">@dimen/_200sdp</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+
+    <style name="Recycler_image" parent="Widget.AppCompat.ImageButton">
+        <item name="android:layout_height">@dimen/_150sdp</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+
+
+    /*
+    CardView Style End
+    */
+
+    <style name="ImageView" parent="Base.Widget.AppCompat.ImageButton">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+
+    </style>
+
+    <style name="ImageView_Rasp_Shield" parent="Base.Widget.AppCompat.ImageButton">
+
+        <item name="android:layout_height">@dimen/_190sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:contentDescription">@string/app_name</item>
+
+    </style>
+
+    <style name="SimpleText" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Text</item>
+        <item name="android:layout_margin">@dimen/_12sdp</item>
+
+    </style>
+
+
+    <style name="Helper_ImageView" parent="Widget.AppCompat.ImageButton">
+
+        <item name="android:layout_width">@dimen/_50sdp</item>
+        <item name="android:layout_height">@dimen/_50sdp</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:alpha">.15</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:contentDescription">@string/app_name</item>
+
+
+    </style>
+
+
+    /*
+        Fragment Project Detail
+
+    */
+
+    //ImageView
+    <style name="Pro_Detail_Image" parent="Widget.AppCompat.ImageButton">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_200sdp</item>
+        <item name="android:background">@color/colorAccent</item>
+
+    </style>
+
+    //TextView Headline
+
+    <style name="Pro_Detail_TextHeading" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+
+    </style>
+
+    //TextView Paragraph
+
+    <style name="Pro_Detail_TextPara" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Text</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:lineSpacingExtra">@dimen/_5sdp</item>
+    </style>
+
+
+</resources>

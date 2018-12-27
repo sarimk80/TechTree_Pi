@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <variable
+            name="Raspberrypi_viewmodel"
+            type="com.example.abbott.navigation_demo.raspberry_pi.viewmodel.Raspberrpi_viewmodel"/>
+
+        <variable
+            name="Event"
+            type="com.example.abbott.navigation_demo.raspberry_pi.presenter.Raspberrypi_Event"/>
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2"
+        tools:context=".raspberry_pi.RaspberryPi">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                style="@style/ImageView_Rasp_Shield"
+                android:layout_weight="1"
+                android:background="@drawable/raspberry1"
+                android:elevation="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/Usb_port1"
+                android:onClick="@{(v)->Event.Usb1_Event()}"
+                style="@style/Helper_ImageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.953"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+            <ImageView
+                android:id="@+id/Usb_port2"
+                android:onClick="@{(v)->Event.Usb2_Event()}"
+                style="@style/Helper_ImageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.953"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/Ethernet"
+                android:onClick="@{(v)->Event.Ethernet_Event()}"
+                style="@style/Helper_ImageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.953"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.912" />
+
+            <ImageView
+                android:id="@+id/Hdmi"
+                android:onClick="@{(v)->Event.Hdmi_Event()}"
+                style="@style/Helper_ImageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.332"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/Chip"
+                android:onClick="@{(v)->Event.Chip_Event()}"
+                style="@style/Helper_ImageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.265"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.401" />
+
+            <ImageView
+                android:id="@+id/Gpio"
+                android:onClick="@{(v)->Event.Gpio_Event()}"
+                style="@style/Helper_ImageView"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_25sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.291"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/power"
+                android:onClick="@{(v)->Event.Power_Event()}"
+                style="@style/Helper_ImageView"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.087"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/Wifi"
+                android:onClick="@{(v)->Event.Wifi_Event()}"
+                style="@style/Helper_ImageView"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.711"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.35" />
+
+            <ImageView
+                android:id="@+id/Jack"
+                android:onClick="@{(v)->Event.Jack_Event()}"
+                style="@style/Helper_ImageView"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.616"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.925" />
+
+            <ImageView
+                android:id="@+id/Camera"
+                android:onClick="@{(v)->Event.Camera_Event()}"
+                style="@style/Helper_ImageView"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_35sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.523"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.813" />
+
+            <ImageView
+                android:id="@+id/Screen"
+                android:onClick="@{(v)->Event.Screen_Event()}"
+                style="@style/Helper_ImageView"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_35sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <android.support.v7.widget.CardView
+
+            style="@style/CardViewStyle"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text"
+                        android:textColor="@color/Text"
+                        android:text="@{Raspberrypi_viewmodel.title}"
+                        />
+
+                    <TextView style="@style/SimpleText"
+                        android:text="@{Raspberrypi_viewmodel.desc}"
+                        />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</layout>

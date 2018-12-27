@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.abbott.navigation_demo.home_fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_projects"
+            app:destination="@id/projects" />
+        <action
+            android:id="@+id/action_homeFragment_to_rc_car"
+            app:destination="@id/rc_car" />
+        <action
+            android:id="@+id/action_homeFragment_to_raspberryPi"
+            app:destination="@id/raspberryPi" />
+        <action
+            android:id="@+id/action_homeFragment_to_shield"
+            app:destination="@id/shield" />
+    </fragment>
+    <fragment
+        android:id="@+id/projects"
+        android:name="com.example.abbott.navigation_demo.project.projects"
+        android:label="fragment_projects"
+        tools:layout="@layout/fragment_projects" >
+        <action
+            android:id="@+id/action_projects_to_pro_Detail"
+            app:destination="@id/projects_card" />
+    </fragment>
+    <fragment
+        android:id="@+id/rc_car"
+        android:name="com.example.abbott.navigation_demo.rc_car.rc_car"
+        android:label="fragment_rc_car"
+        tools:layout="@layout/fragment_rc_car" />
+    <fragment
+        android:id="@+id/projects_card"
+        android:name="com.example.abbott.navigation_demo.project_card.Project_cards"
+        android:label="fragment_pro__detail"
+        tools:layout="@layout/fragment_pro__detail" >
+        <action
+            android:id="@+id/action_projects_card_to_project_detail_card"
+            app:destination="@id/project_detail_card" />
+        <action
+            android:id="@+id/action_projects_card_to_fragment_Youtube"
+            app:destination="@id/fragment_Youtube" />
+    </fragment>
+    <fragment
+        android:id="@+id/raspberryPi"
+        android:name="com.example.abbott.navigation_demo.raspberry_pi.RaspberryPi"
+        android:label="fragment_raspberry_pi"
+        tools:layout="@layout/fragment_raspberry_pi" />
+    <fragment
+        android:id="@+id/shield"
+        android:name="com.example.abbott.navigation_demo.shield.Shield"
+        android:label="fragment_shield"
+        tools:layout="@layout/fragment_shield" />
+    <fragment
+        android:id="@+id/project_detail_card"
+        android:name="com.example.abbott.navigation_demo.project_card.fragment_card.Project_detail_card"
+        android:label="fragment_project_detail_card"
+        tools:layout="@layout/fragment_project_detail_card" />
+    <fragment
+        android:id="@+id/fragment_Youtube"
+        android:name="com.example.abbott.navigation_demo.project_card.fragment_youtube.Fragment_Youtube"
+        android:label="fragment_fragment__youtube"
+        tools:layout="@layout/fragment_fragment__youtube" />
+</navigation>

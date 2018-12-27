@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".project_card.fragment_card.Project_detail_card">
+
+        <ImageView
+            style="@style/Pro_Detail_Image"
+            />
+
+        <TextView
+            style="@style/Pro_Detail_TextHeading"
+            android:text="Description"
+
+
+            />
+
+        <TextView
+            style="@style/Pro_Detail_TextPara"
+            android:text="Description"
+
+
+            />
+
+
+        <TextView
+            style="@style/Pro_Detail_TextHeading"
+            android:text="Things"
+
+
+            />
+
+        <TextView
+            style="@style/Pro_Detail_TextPara"
+            android:text="Things"
+
+
+            />
+
+        <TextView
+            style="@style/Pro_Detail_TextHeading"
+            android:text="Build"
+
+            />
+
+        <TextView
+            style="@style/Pro_Detail_TextPara"
+            android:text="Build"
+
+            />
+
+
+        <TextView
+            style="@style/Pro_Detail_TextHeading"
+            android:text="funtionality"
+
+            />
+
+        <TextView
+            style="@style/Pro_Detail_TextPara"
+            android:text="funtionality"
+
+            />
+
+        <TextView
+            style="@style/Pro_Detail_TextHeading"
+            android:text="Code"
+
+            />
+
+        <TextView
+            style="@style/Pro_Detail_TextPara"
+            android:text="Code"
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

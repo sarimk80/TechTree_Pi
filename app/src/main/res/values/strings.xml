@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">TECH TREE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    //Raspberry Pi String
+
+
+    /*
+    USB PORT
+    */
+    <string name="USB_Title">USB Port</string>
+    <string name="USB_Dec">USB port allow USB devices to be connected to each other with and transfer digital data over the USB Cable. It allows to connect generic keyboard and mouse which is utilize for operating Raspberry Pi.</string>
+
+    /*
+    GPIO
+    */
+    <string name="Gpio_Title">GPIO</string>
+    <string name="Gpio_Dec">A powerful feature of Raspberry Pi is the row of GPIO pins along the top edge of the board. GPIO pins allows the raspberry pi to be configured for different purposes, interact with different circuitries and work with several type of electronic component, for instance, sensors, motors, DC drives etc. GPIO pin can simply be use to turn devices on and off.</string>
+
+    /*
+    ETHERNET PORT
+    */
+    <string name="Ethernet_Title">Ethernet Port</string>
+    <string name="Ethernet_Dec">The Ethernet port allows the raspberry pi to connect to a network using a wired connection. It allows raspberry pi to transmit and receive data.</string>
+
+    /*
+    Audio Jack
+    */
+    <string name="Audio_Title">Audio Jack</string>
+    <string name="Audio_Dec">Raspberry pi comes with built-in audio jack. You can either connect speakers or headphones to it.</string>
+
+    /*
+    Camera Connector
+    */
+    <string name="Camera_Title">CSI Connector</string>
+    <string name="Camera_Dec">The Camera Serial Interface (CSI) is an interface between a camera and host processor. It allows camera to be connected with raspberry pi with a CSI ribbon.</string>
+
+    /*
+    HDMI
+    */
+    <string name="HDMI_Title">HDMI</string>
+    <string name="HDMI_Dec">The High Definition Multimedia Interface (HDMI) is an interface which allows to transmit audio/video data. Through HDMI we can connect either monitor or LCDs.</string>
+
+    /*
+    USB Port
+    */
+    <string name="Usb_Title">USB Port</string>
+    <string name="Usb_Dec">The raspberry pi comes with the micro USB power port. We can power up our raspberry pi using this micro USB port.  </string>
+
+
+    /*
+    Screen Connector
+    */
+    <string name="Screen_Title">DSI Connector</string>
+    <string name="Screen_Dec">The Display Serial Interface (DSI) allows the touchscreens (LCD/OLED) to be connected with raspberry pi via DSI ribbon. Through this interface we can make touchscreen panels.</string>
+
+    /*
+    Processor
+    */
+    <string name="Processor_Title">Processor</string>
+    <string name="Processor_Dec">Raspberry Pi have used a Broadcom BCM2837 system-on-chip (SoC) which includes, four high-performance ARM Cortex-A53 processing cores running at 1.2GHz with Level 1 (32kB) and Level 2 (512kB) cache memory, a VideoCore IV graphics processor, and is linked to 1GB low power DDR2 memory module. </string>
+
+
+    //Shield Strings
+
+    /*
+    SonarSensor
+    */
+    <string name="Sonar_Title">Sonar Sensor</string>
+    <string name="Sonar_Desc">Sonar Sensor, is basically used for measuring distance, which works on the principle of Sonar. Ultrasonic sound waves, which isn’t audible by human ear, are emitted by the sensor and they are reflected back if there is an object in front of it. Distance is then estimated by the time interval between sensor and object.</string>
+
+    /*
+    DC MOTOR
+    */
+    <string name="DCmotor_Title">DC Motor</string>
+    <string name="DCmotor_Desc">DC motors are actuators that converts electrical energy into mechanical energy. DC motor or Direct Current Motor, is the most commonly used actuator for producing continuous movement and whose speed of rotation can easily be controlled, making them ideal for use in application where speed control is require.</string>
+
+
+    /*
+    Servo MOTOR
+    */
+    <string name="Servo_motor_Title">Servo Motor</string>
+    <string name="Servo_Motor_Desc">Servo Motors are electric devices that rotate or push parts of a machine with great precision. The reason for its precision is a feedback circuit that checks the location of servo and compare it to the position signal, this circuit is already integrated in the servo motor we just have to provide the input signal and servo motor will automatically move to the angle according to the input signal. Servos are found in many places: from toys to home electronics to cars and airplanes.</string>
+
+    /*
+    Raspberry pi
+    */
+    <string name="Raspi_Title">Raspberry Pi</string>
+    <string name="Raspi_Desc">The Raspberry Pi is credit card sized small computer. It has a processor, RAM, USB ports to plug a keyboard and a mouse, HDMI port to plug a TV or monitor, and you can even connect it to the internet.</string>
+
+
+</resources>

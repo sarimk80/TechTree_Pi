@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="Event"
+            type="com.example.abbott.navigation_demo.home_fragment.presenter.Presenter" />
+
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".home_fragment.HomeFragment">
+
+        <android.support.v7.widget.CardView style="@style/CardViewStyle"
+
+            >
+
+            <TextView
+                style="@style/Text"
+                android:text="Raspberry Pi" />
+
+            <ImageView
+                android:id="@+id/raspbian"
+                style="@style/ImageView"
+                android:background="@drawable/raspberrypi3_image"
+                android:onClick="@{(v)->Event.RaspberryPi_Event()}" />
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView style="@style/CardViewStyle"
+
+
+            >
+
+            <TextView
+                style="@style/Text"
+                android:text="Shield" />
+
+            <ImageView
+                android:id="@+id/shield"
+                style="@style/ImageView"
+                android:background="@drawable/shield_image"
+                android:onClick="@{(v)->Event.Shield_Event()}" />
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</layout>
