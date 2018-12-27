@@ -2,6 +2,8 @@ package com.example.abbott.navigation_demo.project_card;
 
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -13,7 +15,9 @@ import android.widget.Toast;
 import com.example.abbott.navigation_demo.R;
 import com.example.abbott.navigation_demo.project_card.fragment_card.Project_detail_card;
 import com.example.abbott.navigation_demo.project_card.fragment_youtube.Fragment_Youtube;
+import com.example.abbott.navigation_demo.project_card.model.ProjectModel;
 import com.example.abbott.navigation_demo.project_card.tab_adapter.TabAdapter;
+import com.example.abbott.navigation_demo.project_card.viewmodel.ProjectCardViewModel;
 
 import androidx.navigation.Navigation;
 
@@ -28,6 +32,7 @@ public class Project_cards extends Fragment {
     public ViewPager viewPager;
 
 
+
     public Project_cards() {
         // Required empty public constructor
     }
@@ -39,8 +44,8 @@ public class Project_cards extends Fragment {
         // Inflate the layout for this fragment
         String name = getArguments().getString("Name");
 
-        Bundle bundle = new Bundle();
-        bundle.putString("Name", name);
+
+
 
         View view = inflater.inflate(R.layout.fragment_pro__detail, container, false);
 
@@ -57,4 +62,12 @@ public class Project_cards extends Fragment {
         return view;
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
+
+
+    }
 }

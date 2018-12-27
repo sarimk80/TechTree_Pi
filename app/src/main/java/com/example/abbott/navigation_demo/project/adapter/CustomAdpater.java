@@ -48,6 +48,9 @@ public class CustomAdpater extends RecyclerView.Adapter<CustomAdpater.CustomView
                 bundle.putString("Build",projectBinding.getViewProject().getBuild());
                 bundle.putString("Fun",projectBinding.getViewProject().getFunctionality());
                 bundle.putString("Code",projectBinding.getViewProject().getCode());
+                bundle.putString("Image",projectBinding.getViewProject().getImageUrl());
+                bundle.putString("Youtube",projectBinding.getViewProject().getYoutube());
+                bundle.putString("ImageCard",projectBinding.getViewProject().getImageCard());
                 Navigation.findNavController(viewGroup).navigate(R.id.action_projects_to_pro_Detail,bundle);
             }
         });
